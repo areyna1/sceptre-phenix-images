@@ -24,8 +24,8 @@ apt-get install -y --no-install-recommends -o Dpkg::Options::="--force-confdef" 
 
 # apt-get install -y --no-install-recommends -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" bennu collectd ftp pv python3 python3-pip python3-setuptools python3-twisted python3-wheel python3-dev socat tcpdump tmux telnet vsftpd wget git nano vim jq ntp ca-certificates libusb-1.0-0
 apt-get install -y --no-install-recommends cmake gcc g++ build-essential make libunwind-dev libunwind8 libboost-python-dev
-apt -i /bennu.deb
-apt -i /pybennu.deb
+apt install -y /bennu.deb
+apt install -y /pybennu.deb
 
 # install labjack libraries for pybennu-siren
 # NOTE: pushd/popd cannot be used here due to the fact this isn't bash
